@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Outfit:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Outfit:wght@400;700&family=Press+Start+2P&display=swap');
+body {
+	/* background-image: url("peakpx.jpg"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+			background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
+						  url("peakpx.jpg");
+		background-size: cover;
+		height: 100vh; 
+	  
+}
+#title{
+  margin-bottom: 20px;
+	text-align: center;
+	background-color: rgba(85,178,125,255);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	border-width: 2px;
+	border-color: #ffce12;
+	margin-bottom: 7px;}
+ 
+  h1 {
+         font-family: 'Mystery Quest', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffce12;
+ }
+
+  .clue {
+    width: 30vh;
+    display: flex;
+    margin: auto;
+    border: 2px solid black; /* add a 2px solid black border */
+  background-color: #ffe4c467; /* add a light coral background color */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* add a little shadow */
+  ; /* add some padding to the content */
+  padding-left: 30px;
+  text-align: center;
+  font: 1.5rem;
+  color: white;
+  text-align: center;
+  align-items: center;
+  
+  }
+  .clue h2{
+    text-align: center;
+    padding-left: 33px;
+  }
+
+  #letters{
+    text-align: center;
+    margin: 40px 30px;
+  } 
+  
+  button {
+    background-color: #f4faf4;
+    color: black;
+    padding: 25px 40px;
+    border: none;
+    margin : 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: 2rem bold;
+  }
+  
+  
+  button:hover {
+    background-color: #c4dbc5;
+  }
+  #word {
+    border: 2px solid black; /* Add a border around the section */
+    padding: 10px; /* Add some padding to the section */
+    border-radius: 5px; /* Round the corners of the section */
+    font-size: 36px; /* Set the font size */
+    text-align: center; /* Center the text */
+    background-image: linear-gradient(to right, #FF8C00, #FF5733, #C70039, #900C3F, #581845); /* Add a gradient background color that changes dynamically */
+    background-size: 200%; /* Set the size of the background */
+    animation: gradient 15s ease infinite; /* Add an animation to the gradient to make it change dynamically */
+    width: 300px;
+    margin: auto;
+  }
+  
+  /* Add an animation for the gradient */
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+  
+  
