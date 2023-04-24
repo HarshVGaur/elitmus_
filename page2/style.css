@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Outfit:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Outfit:wght@400;700&family=Press+Start+2P&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	/* background-color: #ececec; */
+	background:  linear-gradient(to right , rgba(19, 132, 173, 0.705), rgba(13, 235, 131, 0.774));
+    background-size: cover;
+}
+
+main{
+	height: 100vh;
+	width: 100vw;
+}
+
+/*title*/
+h1{
+	text-align: center;
+	align-items: center;
+	padding-top: 40px;
+	margin-top: 10px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	width: 420px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Mystery Quest', cursive;
+	font-family: 'Outfit', sans-serif;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#draw{
+	background-color: #1d8521;
+	border-radius: 50%;
+	color: #fff;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+/*content*/
+#content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+#content img{
+	width: 200px;
+}
+
+/*game section*/
+
+h3{
+	padding: 10px;
+}
+
+#game{
+	display: inline-block;
+	height: 200px;
+	width: 400px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+button{
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	height: 40px;
+	width: 80px;
+	text-align: center;
+	background-color: #06d10f;
+	border: none;
+	font-size: 15px;
+	margin: 10px;
+}
+
+button:hover{
+	box-shadow: 1px 1px 5px blueviolet;
+	color: #fff;
+}
+
+#game input{
+	padding: 10px;
+}
+
+#result{
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+/*animations*/
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+        transform: rotate(45deg);
+        opacity: 0;
+       }
+    50% {
+        transform:scale(50%);
+    }
+    100% {
+        transform: translateY(-15px);
+        transform: rotate(-45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 0;
+    }
+    from {
+        opacity: 1;
+            }
+}
+
+.diceAnimation {
+    animation: move 0.5s infinite alternate;
+    /*
+    animation: mover .5s infinite alternate;
+    animation: mover .5s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.appear {
+    animation: appear 1.5s ease-in;
+}
